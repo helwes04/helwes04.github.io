@@ -1,18 +1,35 @@
 ---
-title: Post four
-date: "2021-12-14"
+title: Fredag
+date: "2023-01-20"
 ---
 
 <script>
  let a = 0;
+ let b = 0;
+ let c = " ";
 </script>
 
-Hello, I am _Post One._
+Idag har jag lekt runt lite med blogarna samt utväcklat onsdagens blog en aning, men har även lekt runt med knapparna i bloggarna och gjort en like och Dislike och därefter en knap som frår en text att synas.
+Ändrat lite färger på borders
 
-**Nice to meet tjena!**
+```js
+<script>
+ let a = 0;
+ let b = 0;
+ let c = " ";
+</script>
 
-**sick**
-    
-<h1>{a}</h1>
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
 
-<button on:click={()=>{a = a + 1}}>CLICK ME</button>
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>
+```
+
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
+
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>

@@ -1,20 +1,22 @@
 ---
-title: Post One
-date: "2021-12-14"
+title: Tisdag
+date: "2023-01-17"
 ---
 
 <script>
  let a = 0;
+ let b = 0;
+ let c = " ";
 </script>
 
-Hello, I am _Post One._
+Idag har jag laddat ner koden från github och instalerat alla program som behövdes för att börja
 
-**Nice to meet you!**
+Jag ändrat färgerna på background_color i klasserna worker och upgrade samt bytt namn på en del texter som jag nog lär byta igen nästa gång
+han inte så mycket då de första tog rätt lång tid men de va rätt coolt att då få se de man ändrar på en hemsida
 
-**sick**
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
 
-😀 😃 😄 😁 😆 😅 😂
-
-<h1>{a}</h1>
-
-<button on:click={()=>{a = a + 1}}>CLICK ME</button>
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>

@@ -1,0 +1,22 @@
+---
+title: Onsdag
+date: "2023-01-25"
+---
+
+<script>
+ let a = 0;
+ let b = 0;
+ let c = " ";
+</script>
+
+Idag började jag med att göra en till sida på min hemsida nämd gallery, jag vart förvånad över hur lätt de va, sidan i sig krävde inte alls så mycket som jag trodde, jag trodde att man skulle behöva göra en massa kod men de krändes bara en kort rad kod i layout.svelte och sen göra filerna för sidans innehåll
+jag valde att bara ta en färdig kod från hemsidan vi fårr för kod ideer, då jag framförallt ville testa göra en till sida. Koderna jag gjorde till dehär finns i mappen gallery, som innehållen en images.jS fil och en page.svelte
+Men när jag går in på sidan kan jag inte sen använda länkarna för att komma till dom andra
+
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
+
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>
+

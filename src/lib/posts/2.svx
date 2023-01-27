@@ -1,87 +1,48 @@
 ---
-title: Post Two
-date: "2022-11-29"
-count: 25
-color: cadetblue
-list: [1, 2, 3, 4, "boo"]
+title: Onsdag
+date: "2023-01-18"
+
 ---
 
 <script>
-	import Boinger from './2/Boinger.svelte';
-	import Section from './2/Section.svx';
-	import Count from './2/Count.svelte';
-    import Seriously from './2/Seriously.svelte';
-
-	let number = 45;
+ let a = 0;
+ let b = 0;
+ let c = " ";
 </script>
 
-```ts
-import type { PageLoad } from "./$types";
+Jag experimenterade mest runt idag o ändra massa småsaker men fick med de mesta i koden nedanför:
+Vi alla upptäckte lite problem med clickers, att den dubblade var redan isig inte särskilt bra då det med några få tryck ökat hundra tals gånger,
+istället ändrade jag till att den adderar 1 istället för gångrar med 2, det gjorde de mer balanserat och ändrade arbetarna så att även dom bara blev en fler.
 
-export const load: PageLoad = async ({fetch}) => {
-	const response = await fetch(`/api/posts`);
-	const posts = await response.json();
+Jag ändrade bilderna samt bytte från en rund kaka till en rektangulär större bild, lite små ändringar gällande borders och text då tiden började ta slut och jag inte kan koden bra nog att göra några stora ändringar mot slutet som jag inte skulle hinna klart med.
+Jag tycker att de va lite svårt med den nya färdigskrivna koden som har ett så annat upplägg än python som är de ända språket jag kan.
+De va ändå kanska intressant och tyckte de va kul att testa men de va väldigt svårt att få nått stor ändring. 
+men nästa gång ska jag kanske försöka med nåt nytt lite större
 
-	return {
-	posts,
-	};
-};
+```js
+{ cost: 15, name: "Adder", multiplier: 1, worker: 0 },
+multiplier = multiplier + upgrade.multiplier;
+worker_multiplier = worker_multiplier + 1;
+
+background-image: url("https://i0.wp.com/www.thearcadecorner.com/wp-content/uploads/2019/07/blast-furnace.jpg?fit=780%2C439&ssl=1");
+clip-path: rectangel();
+border: 8px solid rgb(94, 61, 18);
+    background-image: url("https://images.arla.com/recordid/8604230E-81A2-4982-A595B34571D919EB/salted-chocolate-chip-cookies.jpg?width=1200&height=630&mode=crop&crop=(0,520,0,-432)");
+
+	clicks {
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+  .pointtext {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
 ```
 
-## Good stuff in your markdown
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
 
-Markdown is pretty good but sometimes you just need more.
-
-Sometimes you need a boinger like this:
-
-<Boinger color="{ color }"/>
-
-Not many people have a boinger right in their markdown.
-
-## Markdown in your markdown
-
-Sometimes what you wrote last week is so good that you just *have* to include it again.
-
-I'm not gonna stand in the way of your egomania.
->
-><Section />
-> <Count />
->
->— *Me, May 2019*
-
-Yeah, thats right you can put wigdets in markdown (`.svx` files or otherwise). You can put markdown in widgets too.
-
-<Seriously>
-
-### I wasn't joking
-
-```
-	This is real life
-```
-
----
-## Hej lisa!    
-
-<Count/>
-
-</Seriously>
-
-Sometimes you need your widgets **inlined** (like this:<Count count="{number}"/>) because why shouldn't you.
-Obviously you have access to values defined in YAML (namespaced under `metadata`) and anything defined in an fenced `js exec` block can be referenced directly.
-
-Normal markdown stuff works too:
-
-| like  | this |
-|-------|------|
-| table | here |
-
-And *this* and **THIS**. And other stuff. You can also use all your favorite Svelte features, like `each` blocks:
-
-<ul>
-{#each list as item}
-  <li>{item}</li>
-{/each}
-</ul>
-
-and all the other good Svelte stuff.
-
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>

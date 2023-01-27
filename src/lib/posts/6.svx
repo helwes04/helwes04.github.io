@@ -1,0 +1,19 @@
+---
+title: Fredag
+date: "2023-01-27"
+---
+
+<script>
+ let a = 0;
+ let b = 0;
+ let c = " ";
+</script>
+
+Jag
+
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
+
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>

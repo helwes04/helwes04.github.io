@@ -13,10 +13,13 @@
   </style>
 </svelte:head>
 
+
 <nav>
   <ul>
     <li><a href="/">Hem</a></li>
     <li><a href="/devblog">Blog</a></li>
+    <a href="tel:46761114750">Alfons</a>
+    <li><a href="/gallery">Gallery</a></li>
   </ul>
 </nav>
 

@@ -1,0 +1,59 @@
+---
+title: Tisdag
+date: "2023-01-24"
+
+---
+<script>
+ let a = 0;
+ let b = 0;
+ let c = " ";
+</script>
+
+Har idag lekt runt med lite olika html koder, så som Marquee som får texten att slida och details som man kan trycka på och få mer text.
+Med dehär har jag gjort en ganska  onödig som bara säger att star wars är bra (i brits på creativitet) och en längst ner på sidan som ger användaren ett recept för att själv göra kakor.
+Sen hittade jag en rad kod som skulle ringa de angedda numeret, det funkar inte då jag inte kan ringa via datorn men on man använda hemsidan på telefon skulle det funka.
+De har varit en ganska kul lektion och de olika koderna jag skrev idag va alla väldigt hjälpsamma för att bättre förstå hur koden funkade och den känns nu betydligt lättare än innan denhär lektonen började
+Men tror samtidigit att de kommer vraa mycket roligare att göra våra egna hemsidor själva för när man gjort allt själv kommer man kunna förstå mycket mer och göra ändringar lättare. 
+Men tills dess får jag väll bara fortsätta göra små ändringar.
+Marquee va lite svår att få till som jag ville, jag tänkte först att sen skulle åka åt höger o försvinna o komma up igen i början, men fick inte till de då den började utan att visa något, sen åkte över skärmen och ut, tills hela va borta och då kom den up igen, men de var för långt tid som texten inte visade sig.
+istället slidade jag texten till vänster för att sen stanna på skärmen, de funkar men va inte riktigt som jag hade velat ha de hade velat att man hela tiden såg all text men vet inte hur jag skulle gjort koden som skrev en till textrad när första kommit hela vägen och började försvinna.
+
+```js
+<details>
+<summary>Just saying</summary>
+<p>Star Wars 4-6 is btw the best Movie Triology ever just saying </p>
+</details>
+<marquee behavior="slide"scrollamount="6"scrolldelay="20"truespeed>We provide fresh cookies betwene 09:50am - 12:15pm but you have to make them yourself</marquee>
+
+<details>
+  <summary>Baka dom hemma själv</summary>
+  <h6>Ingredienser</h6>
+  <p>Arla® Svenskt Smör - 100 g</p>
+  <p>Strösocker - 1 dl</p>
+  <p>Farinsocker - ½ dl</p>
+  <p>Ägg - 1</p>
+  <p>Vetemjöl - 2 dl</p>
+  <p>Bikarbonat - ½ tsk</p>
+  <p>Salt - ½ tsk</p>
+  <p>Vaniljsocker - ½ tsk</p>
+  <p>Mörk choklad - 100 g</p>
+  
+  <h6>Gör Såhär</h6>
+  <p>Smält smöret långsamt i en kastrull, ta det från plattan så fort det har smält och låt det svalna. Om smöret är för varmt så smälter chokladbitarna ut i smeten.</p>
+  <p>Hacka chokladen grovt. Rör ner socker, farinsocker och ägg i kastrullen. Blanda bikarbonat, salt och vaniljsocker i mjölet och rör ner det tillsammans med chokladen.</p>
+  <p>Kyl smeten väl, minst 2h.</p>
+  <p>Rulla den kylda degent till bollar och placera på en plåt med bakplåtspapper. Lägg dem inte för tätt eftersom de flyter ut något i ugnen. Det är lagom med nio kakor på varje plåt.</p>
+  <p>Sätt ugnen på 200°.</p>  
+  <p>Baka kakorna i mitten av ugnen i ca 10 min. Låt kakorna kallna på plåten.</p>
+ 
+  <h6>Klar!!</h6>
+  </details>
+
+  <a href="tel:46761114750">Call Alfons</a>
+```
+<h1>Like: {a}  -  Dislike: {b}</h1>
+<h1>{c}</h1>
+
+<button on:click={()=>{a = a + 1}}>Like this post</button>
+<button on:click={()=>{b = b + 1}}>Dislike this post</button>
+<button on:click={()=>{c = "Du fick A+"}}>Give this post a A+</button>

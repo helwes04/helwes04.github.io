@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-8003c18b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-d039374c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-1fdbd9e6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-59cb279b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-60c3c631.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/devblog/_path_/_page.svelte-34379312.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/devblog/_path_/_page.js-bb7b32cf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-a68da0d8.js"><!-- HEAD_svelte-1lc4dl3_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  </style><!-- HEAD_svelte-1lc4dl3_END -->
+	</head>
+	<body>
+		<div style="display: contents">
+
+
+
+
+
+<nav><ul><li><a href="/">Hem</a></li>
+    <li><a href="/devblog">Blog</a></li>
+    <a href="tel:46761114750">Alfons</a>
+    <li><a href="/gallery">Gallery</a></li></ul></nav>
+
+<main class="container-fluid"><hr>
+
+  <main class="container">
+
+
+<article><h1>Tisdag</h1>
+  <p>Published: 2023-01-24</p>
+  <p>Har idag lekt runt med lite olika html koder, så som Marquee som får texten att slida och details som man kan trycka på och få mer text.
+Med dehär har jag gjort en ganska  onödig som bara säger att star wars är bra (i brits på creativitet) och en längst ner på sidan som ger användaren ett recept för att själv göra kakor.
+Sen hittade jag en rad kod som skulle ringa de angedda numeret, det funkar inte då jag inte kan ringa via datorn men on man använda hemsidan på telefon skulle det funka.
+De har varit en ganska kul lektion och de olika koderna jag skrev idag va alla väldigt hjälpsamma för att bättre förstå hur koden funkade och den känns nu betydligt lättare än innan denhär lektonen började
+Men tror samtidigit att de kommer vraa mycket roligare att göra våra egna hemsidor själva för när man gjort allt själv kommer man kunna förstå mycket mer och göra ändringar lättare.
+Men tills dess får jag väll bara fortsätta göra små ändringar.
+Marquee va lite svår att få till som jag ville, jag tänkte först att sen skulle åka åt höger o försvinna o komma up igen i början, men fick inte till de då den började utan att visa något, sen åkte över skärmen och ut, tills hela va borta och då kom den up igen, men de var för långt tid som texten inte visade sig.
+istället slidade jag texten till vänster för att sen stanna på skärmen, de funkar men va inte riktigt som jag hade velat ha de hade velat att man hela tiden såg all text men vet inte hur jag skulle gjort koden som skrev en till textrad när första kommit hela vägen och började försvinna.</p>
+<pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token operator">&lt;</span>details<span class="token operator">></span>
+<span class="token operator">&lt;</span>summary<span class="token operator">></span>Just saying<span class="token operator">&lt;</span><span class="token operator">/</span>summary<span class="token operator">></span>
+<span class="token operator">&lt;</span>p<span class="token operator">></span>Star Wars <span class="token number">4</span><span class="token operator">-</span><span class="token number">6</span> is btw the best Movie Triology ever just saying <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>details<span class="token operator">></span>
+<span class="token operator">&lt;</span>marquee behavior<span class="token operator">=</span><span class="token string">"slide"</span>scrollamount<span class="token operator">=</span><span class="token string">"6"</span>scrolldelay<span class="token operator">=</span><span class="token string">"20"</span>truespeed<span class="token operator">></span>We provide fresh cookies betwene <span class="token number">09</span><span class="token operator">:</span>50am <span class="token operator">-</span> <span class="token number">12</span><span class="token operator">:</span>15pm but you have to make them yourself<span class="token operator">&lt;</span><span class="token operator">/</span>marquee<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>details<span class="token operator">></span>
+  <span class="token operator">&lt;</span>summary<span class="token operator">></span>Baka dom hemma själv<span class="token operator">&lt;</span><span class="token operator">/</span>summary<span class="token operator">></span>
+  <span class="token operator">&lt;</span>h6<span class="token operator">></span>Ingredienser<span class="token operator">&lt;</span><span class="token operator">/</span>h6<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Arla® Svenskt Smör <span class="token operator">-</span> <span class="token number">100</span> g<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Strösocker <span class="token operator">-</span> <span class="token number">1</span> dl<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Farinsocker <span class="token operator">-</span> ½ dl<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Ägg <span class="token operator">-</span> <span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Vetemjöl <span class="token operator">-</span> <span class="token number">2</span> dl<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Bikarbonat <span class="token operator">-</span> ½ tsk<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Salt <span class="token operator">-</span> ½ tsk<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Vaniljsocker <span class="token operator">-</span> ½ tsk<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token constant">M</span>örk choklad <span class="token operator">-</span> <span class="token number">100</span> g<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  
+  <span class="token operator">&lt;</span>h6<span class="token operator">></span><span class="token constant">G</span>ör <span class="token constant">S</span>åhär<span class="token operator">&lt;</span><span class="token operator">/</span>h6<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Smält smöret långsamt i en kastrull<span class="token punctuation">,</span> ta det från plattan så fort det har smält och låt det svalna<span class="token punctuation">.</span> Om smöret är för varmt så smälter chokladbitarna ut i smeten<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Hacka chokladen grovt<span class="token punctuation">.</span> <span class="token constant">R</span>ör ner socker<span class="token punctuation">,</span> farinsocker och ägg i kastrullen<span class="token punctuation">.</span> Blanda bikarbonat<span class="token punctuation">,</span> salt och vaniljsocker i mjö<span class="token keyword">let</span> och rör ner det tillsammans med chokladen<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Kyl smeten väl<span class="token punctuation">,</span> minst 2h<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Rulla den kylda degent till bollar och placera på en plåt med bakplåtspapper<span class="token punctuation">.</span> <span class="token constant">L</span>ägg dem inte för tätt eftersom de flyter ut något i ugnen<span class="token punctuation">.</span> Det är lagom med nio kakor på varje plåt<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token constant">S</span>ätt ugnen på <span class="token number">200</span>°<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>  
+  <span class="token operator">&lt;</span>p<span class="token operator">></span>Baka kakorna i mitten av ugnen i ca <span class="token number">10</span> min<span class="token punctuation">.</span> <span class="token constant">L</span>åt kakorna kallna på plåten<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+ 
+  <span class="token operator">&lt;</span>h6<span class="token operator">></span>Klar<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>h6<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>details<span class="token operator">></span>
+
+  <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"tel:46761114750"</span><span class="token operator">></span>Call Alfons<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span></code><!-- HTML_TAG_END --></pre>
+<h1>Like: 0  -  Dislike: 0</h1>
+<h1> </h1>
+<button>Like this post</button>
+<button>Dislike this post</button>
+<button>Give this post a A+</button></article></main></main>
+
+
+		<script type="module" data-sveltekit-hydrate="1j65nlh">
+			import { start } from "../_app/immutable/start-d039374c.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="1j65nlh"]').parentNode,
+				version: "1674816915636",
+				hydrate: {
+					node_ids: [0, 4],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>

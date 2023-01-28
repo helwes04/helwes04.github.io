@@ -11,7 +11,9 @@ date: "2023-01-25"
 
 Idag började jag med att göra en till sida på min hemsida nämd gallery, jag vart förvånad över hur lätt de va, sidan i sig krävde inte alls så mycket som jag trodde, jag trodde att man skulle behöva göra en massa kod men de krändes bara en kort rad kod i layout.svelte och sen göra filerna för sidans innehåll
 jag valde att bara ta en färdig kod från hemsidan vi fårr för kod ideer, då jag framförallt ville testa göra en till sida. Koderna jag gjorde till dehär finns i mappen gallery, som innehållen en images.jS fil och en page.svelte
-Men när jag går in på sidan kan jag inte sen använda länkarna för att komma till dom andra
+Men när jag går in på sidan kan jag inte sen använda länkarna för att komma till dom andra sidorna, tror att gallerys telefons 'hitbox' blockerar länkarna, något som kan gå om jag bara flyttar gallery telefonen.
+De var en intressant lektion och känner nu att de kanske går att göra rätt mycket och coolt ändå
+Jag bifogar alla länkar i nästa logg när jag gjort klart allt
 
 <h1>Like: {a}  -  Dislike: {b}</h1>
 <h1>{c}</h1>

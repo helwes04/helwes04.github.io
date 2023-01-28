@@ -9,8 +9,8 @@ date: "2023-01-20"
  let c = " ";
 </script>
 
-Idag har jag lekt runt lite med blogarna samt utväcklat onsdagens blog en aning, men har även lekt runt med knapparna i bloggarna och gjort en like och Dislike och därefter en knap som frår en text att synas.
-Ändrat lite färger på borders
+Idag har jag lekt runt lite med blogarna samt utväcklat onsdagens blog en aning, ändrat och testat mig fram med knappar, knapparna i bloggarna mer exakt och gjort en like och Dislike och därefter en knap som om man trycker på den får en text att synas.
+Ändrat lite färger på borders och annat i slutet då de är rätt svårt att göra ändringar i den avanserade koden, blir de, iallafall nu i mäst kosmetiska ändringar.
 
 ```js
 <script>

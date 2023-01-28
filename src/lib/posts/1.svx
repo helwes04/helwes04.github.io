@@ -12,7 +12,8 @@ date: "2023-01-17"
 Idag har jag laddat ner koden från github och instalerat alla program som behövdes för att börja
 
 Jag ändrat färgerna på background_color i klasserna worker och upgrade samt bytt namn på en del texter som jag nog lär byta igen nästa gång
-han inte så mycket då de första tog rätt lång tid men de va rätt coolt att då få se de man ändrar på en hemsida
+han inte så mycket då de första tog rätt lång tid men de va rätt coolt att då få se de man ändrar på en hemsida.
+De svåraste var att förstå var i koden olika saker hände, men tycker generelt från vad jag sätt att de värkar mer straight forward än python då de finns många hjälpsamma fädiga komandon, saker man hade behövt skriva mer kod till i python
 
 <h1>Like: {a}  -  Dislike: {b}</h1>
 <h1>{c}</h1>
